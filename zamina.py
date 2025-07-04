@@ -7,7 +7,7 @@ from docx.shared import Pt, RGBColor, Inches
 from docxcompose.composer import Composer
 
 # 🔷 Шляхи
-folder_path = r"C:\Users\1\Desktop\ЗВ-41"
+folder_path = r"C:\Users\1\Desktop\Заочне"
 dyploma_path = r"C:\Users\1\Desktop\test.docx"
 
 replacements = {
@@ -17,14 +17,19 @@ replacements = {
     'Degree': 'Professional pre-higher education educational-professional degree',
     'Професійна кваліфікація (у разі присвоєння)': 'Освітньо-професійна програма',
     'Professional Qualification (if awarded)': 'Educational-professional programme',
-#Помічання: якщо потрібно, можна додати більше замін
+
+    #Помічання: якщо потрібно, можна додати більше замін
     'Фахівець з геодезії та землеустрою': 'Землевпорядкування',
     'Specialist in geodesy and land management': 'Land management',
 
     'Основна	(основні)	галузь	(галузі)	знань	за кваліфікацією': 'Професійна кваліфікація (у разі присвоєння)',
     'Main field(s) of study for the qualification': 'Professional qualification (if awarded)',
+
+    #Помічання: якщо потрібно, можна додати більше замін
     '19 Архітектура та будівництво': 'Фахівець з геодезії та землеустрою',
     '19 Architecture and Construction': 'Specialist in geodesy and land management',
+
+
     'Найменування і статус закладу (якщо відмінні від п. 2.3), який реалізує освітню програму': '',
     'Name and status of institution (if different from 2.3)': '',
     'administering studies': '',
@@ -37,7 +42,7 @@ replacements = {
 
     'Тривалість освітньої програми в кредитах та/або роках': 'Офіційна тривалість освітньо-професійної програми в кредитах та/або роках',
     'Official duration of programme in credits and/or years': 'Official length of educational-professional programme in credits and/or years',
-    'ІНФОРМАЦІЯ ПРО ЗАВЕРШЕНУ ОСВІТНЮ ПРОГРАМУ ТА ЗДОБУТІ РЕЗУЛЬТАТИ НАВЧАННЯ': 'ІНФОРМАЦІЯ ПРО ЗАВЕРШЕНУ ОСВІТНЬО-ПРОФЕСІЙНУ ПРОГРАМУ ТА ЗДОБУТІ РЕЗУЛЬТАТИ НАВЧАННЯ',
+    'ІНФОРМАЦІЯ	ПРО	ЗАВЕРШЕНУ	ОСВІТНЮ ПРОГРАМУ ТА ЗДОБУТІ РЕЗУЛЬТАТИ НАВЧАННЯ': 'ІНФОРМАЦІЯ ПРО ЗАВЕРШЕНУ ОСВІТНЬО-ПРОФЕСІЙНУ ПРОГРАМУ ТА ЗДОБУТІ РЕЗУЛЬТАТИ НАВЧАННЯ',
     'INFORMATION ON THE PROGRAMME COMPLETED AND THE RESULTS OBTAINED': 'INFORMATION ON THE COMPLETED EDUCATIONAL-PROFESSIONAL PROGRAMME AND LEARNING OUTCOMES',
     'Найменування всіх закладів вищої освіти (наукових установ) (відокремлених структурних підрозділів закладів вищої освіти), у яких здобувалася кваліфікація (у тому числі заклади освіти, в яких здобувач вищої освіти вивчав окремі дисципліни за програмами академічної мобільності)': 'Найменування всіх закладів фахової передвищої освіти (структурних підрозділів або філій закладів фахової передвищої освіти), у яких здобувалася освітня кваліфікація (у тому числі заклади освіти, в яких здобувач фахової передвищої освіти вивчав окремі дисципліни за програмами академічної мобільності)',
     'Name of all higher education (research) institutions (separate structural units of higher education institutions) where the qualification has been gained (including education institutions where the holder of the qualification has been studying separate course units within the framework(s) of': 'Names of all professional pre-higher education institutions (professional pre-higher education institutions separate structural units or branches) the qualification was gained in (including education institutions where the student of professional pre-higher education  studied separate course units within the framework of academic mobility programme)',
@@ -51,7 +56,6 @@ replacements = {
     'Position of the Head or another authorized person of the Higher Education (Research) Institution': 'Position of the professional pre-higher education institution head or other authorized person',
     'Печатка': 'Офіційна печатка',
     'Official stamp or seal': 'Official Seal',
-    '8. ІНФОРМАЦІЯ ПРО НАЦІОНАЛЬНУ СИСТЕМУ ВИЩОЇ ОСВІТИ': '',
     'ІНФОРМАЦІЯ ПРО СИСТЕМУ ФАХОВОЇ ПЕРЕДВИЩОЇ ОСВІТИ': '',
 }
 
