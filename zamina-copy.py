@@ -7,56 +7,11 @@ from docx.shared import Pt, RGBColor, Inches
 from docxcompose.composer import Composer
 
 # 🔷 Шляхи
-folder_path = r"C:\Users\1\Desktop\КН-41"
-dyploma_path = r"C:\Users\1\Desktop\test.docx"
+folder_path = r"C:\Users\1\Desktop\КН-41 – копія"
+dyploma_path = r"C:\Users\1\Desktop\test – копія.docx"
 
 replacements = {
-    'Назва кваліфікації та присвоєний ступінь': 'Назва освітньої кваліфікації та присвоєний освітньо-професійний ступінь (мовою оригіналу)',
-    'Name of qualification and (if applicable) title conferred': 'Name of educational qualification and educational-professional degree conferred (in original language)',
-    'Ступінь вищої освіти': 'Освітньо-професійний ступінь фахової передвищої освіти',
-    'Degree': 'Professional pre-higher education educational-professional degree',
-    'Професійна кваліфікація (у разі присвоєння)': 'Освітньо-професійна програма',
-    'Professional Qualification (if awarded)': 'Educational-professional programme',
-    #Помічання: якщо потрібно, можна додати більше замін
-    'Фахівець з інженерії програмного забезпечення': 'Розробка програмного забезпечення',
-    'Specialist in software engineering': 'Software Development',
-
-    'Основна	(основні)	галузь	(галузі)	знань	за кваліфікацією': 'Професійна кваліфікація (у разі присвоєння)',
-    'Main field(s) of study for the qualification': 'Professional qualification (if awarded)',
-
-    #Помічання: якщо потрібно, можна додати більше замін
-    '12 Інформаційні технології': 'Фахівець з інженерії програмного забезпечення',
-    '12 Information Technology': 'Specialist in software engineering',
-
-
-    'Найменування і статус закладу (якщо відмінні від п. 2.3), який реалізує освітню програму': '',
-    'Name and status of institution (if different from 2.3)': '',
-    'administering studies': '',
-    'Зазначено у пункті 2.3': '',
-    'Specified in 2.3': '',
-    '2.5': '2.4',
-    '6.2.5': '6.2.5',
-    'ПРО РІВЕНЬ КВАЛІФІКАЦІЇ': 'ПРО КВАЛІФІКАЦІЮ',
-    'INFORMATION ON THE LEVEL AND DURATION OF THE QUALIFICATION': 'INFORMATION ON THE LEVEL OF QUALIFICATION AND LENGTH OF PROGRAMME',
-
-    'Тривалість освітньої програми в кредитах та/або роках': 'Офіційна тривалість освітньо-професійної програми в кредитах та/або роках',
-    'Official duration of programme in credits and/or years': 'Official length of educational-professional programme in credits and/or years',
-    'ІНФОРМАЦІЯ	ПРО	ЗАВЕРШЕНУ	ОСВІТНЮ ПРОГРАМУ ТА ЗДОБУТІ РЕЗУЛЬТАТИ НАВЧАННЯ': 'ІНФОРМАЦІЯ ПРО ЗАВЕРШЕНУ ОСВІТНЬО-ПРОФЕСІЙНУ ПРОГРАМУ ТА ЗДОБУТІ РЕЗУЛЬТАТИ НАВЧАННЯ',
-    'INFORMATION ON THE PROGRAMME COMPLETED AND THE RESULTS OBTAINED': 'INFORMATION ON THE COMPLETED EDUCATIONAL-PROFESSIONAL PROGRAMME AND LEARNING OUTCOMES',
-    'Найменування всіх закладів вищої освіти (наукових установ) (відокремлених структурних підрозділів закладів вищої освіти), у яких здобувалася кваліфікація (у тому числі заклади освіти, в яких здобувач вищої освіти вивчав окремі дисципліни за програмами академічної мобільності)': 'Найменування всіх закладів фахової передвищої освіти (структурних підрозділів або філій закладів фахової передвищої освіти), у яких здобувалася освітня кваліфікація (у тому числі заклади освіти, в яких здобувач фахової передвищої освіти вивчав окремі дисципліни за програмами академічної мобільності)',
-    'Name of all higher education (research) institutions (separate structural units of higher education institutions) where the qualification has been gained (including education institutions where the holder of the qualification has been studying separate course units within the framework(s) of': 'Names of all professional pre-higher education institutions (professional pre-higher education institutions separate structural units or branches) the qualification was gained in (including education institutions where the student of professional pre-higher education  studied separate course units within the framework of academic mobility programme)',
-    'academic mobility)': '',
-    'закладу	вищої	освіти (наукової установи)': 'закладу фахової передвищої освіти (іншого суб’єкта освітньої діяльності)',
-    'institution':'',
-    'Contact information of the higher education (research)':'Contact information of the professional pre-higher education institution (other educational entity)',
-    'Керівник або уповноважена особа закладу вищої освіти': 'Керівник або уповноважена особа закладу фахової передвищої освіти',
-    'Capacity': 'Head or other authorized person of professional pre-higher education institution',
-    'Посада керівника або іншої уповноваженої особи закладу вищої освіти (наукової установи)': 'Посада керівника або іншої уповноваженої особи закладу фахової передвищої освіти',
-    'Position of the Head or another authorized person of the Higher Education (Research) Institution': 'Position of the professional pre-higher education institution head or other authorized person',
-    'Печатка': 'Офіційна печатка',
-    'Official stamp or seal': 'Official Seal',
-    'ІНФОРМАЦІЯ ПРО СИСТЕМУ ФАХОВОЇ ПЕРЕДВИЩОЇ ОСВІТИ': '',
-}
+   }
 
 keys_to_format = [
     'Офіційна печатка',
